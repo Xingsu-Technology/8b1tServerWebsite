@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #86a8e7, #7f7fd5, #4b79a1);
+    background-size: 1000% 1000%;
+    animation: gradientFlow 15s ease infinite;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: slideDown 1s ease-out;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-out;
+}
+
+.home-content p {
+    font-size: 1.2em;
+    animation: fadeIn 2s ease-out;
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: slideInLeft 1.5s ease-out;
+}
+
+.content p, .content ul {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: slideInRight 1.5s ease-out;
+    line-height: 1.6;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    animation: fadeIn 2s ease-out;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.game-box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#click-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#click-button:hover {
+    background-color: #ff5722;
+}
+
+#score {
+    font-size: 2em;
+    margin-top: 10px;
+    animation: pulse 0.5s ease;
+}
+
+footer {
+    background-color: rgba(34, 34, 34, 0.8);
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}

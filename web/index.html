@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8b1t Minecraft 服务器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>8b1t 服务器</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#features">功能介绍</a></li>
+                <li><a href="#gallery">画廊</a></li>
+                <li><a href="#rules">服务器规则</a></li>
+                <li><a href="#game">小游戏</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            <h2>欢迎来到8b1t Minecraft 服务器</h2>
+            <p>一个充满创意和冒险的世界正等着你！</p>
+            <p>加入我们的QQ群：938727386</p>
+            <p>访问我们的官网：<a href="http://www.8b1t.top" target="_blank">www.8b1t.top</a></p>
+            <p>服务器地址：8b1t.top</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="content">
+            <h2>关于我们</h2>
+            <p>8b1t 是一个专为Minecraft玩家设计的服务器，提供丰富的游戏体验和友好的社区。</p>
+            <p>我们的服务器致力于为玩家创造一个独特的游戏环境，拥有丰富的插件和自定义功能。无论你是建筑大师、红石工程师，还是冒险探索者，这里都有适合你的玩法。</p>
+            <p>我们的社区充满活力，定期举办活动，提供丰厚的奖励和充满挑战的任务。加入我们，和其他Minecraft爱好者一起享受无限的创意和乐趣！</p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="content">
+            <h2>功能介绍</h2>
+            <ul>
+                <li><strong>多种游戏模式：</strong> 我们的服务器支持生存、创造、冒险等多种游戏模式，满足不同玩家的需求。</li>
+                <li><strong>自定义插件：</strong> 为了提高游戏乐趣，我们开发了一些独特的插件，如经济系统、玩家商店和自定义成就。</li>
+                <li><strong>稳定的网络：</strong> 我们使用高性能的服务器硬件，确保玩家在游戏中体验流畅，无卡顿。</li>
+                <li><strong>每日任务：</strong> 完成每日任务可获得独特奖励，助你在游戏中更进一步。</li>
+                <li><strong>定期活动：</strong> 每周举办各种活动，包括建筑比赛、PVP锦标赛等，让你体验不同的玩法。</li>
+                <li><strong>社区支持：</strong> 加入我们的QQ群，获取最新资讯和游戏支持，与其他玩家互动。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="content">
+            <h2>画廊</h2>
+            <div class="gallery">
+                <img src="1.jpg" alt="截图1">
+                <img src="2.jpg" alt="截图2">
+                <img src="3.jpg" alt="截图3">
+                <img src="4.jpg" alt="截图4">
+                <img src="5.jpg" alt="截图5">
+            </div>
+        </div>
+    </section>
+
+    <section id="rules">
+        <div class="content">
+            <h2>服务器规则</h2>
+            <ul>
+                <li>尊重他人，不得进行人身攻击或歧视性言论。</li>
+                <li>禁止使用作弊工具或外部插件进行游戏。</li>
+                <li>不得故意破坏其他玩家的建筑或资源。</li>
+                <li>不得发布广告或其他非游戏相关的信息。</li>
+                <li>服从管理员的管理和指令，如有异议可通过QQ群沟通。</li>
+                <li>违反规则将导致封禁处理，请大家自觉遵守。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="game">
+        <div class="content">
+            <h2>小游戏：点击挑战</h2>
+            <p>点击下方按钮尽可能多地获取分数！</p>
+            <div class="game-box">
+                <button id="click-button">点击我</button>
+                <p>得分：<span id="score">0</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>联系我们</h2>
+            <p>如果你有任何问题或建议，请通过以下方式联系我们：</p>
+            <ul>
+                <li>QQ群：938727386</li>
+                <li>官网：<a href="http://www.8b1t.top" target="_blank">www.8b1t.top</a></li>
+                <li>服务器地址：8b1t.top</li>
+            </ul>
+            <p>支持由星速云提供</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 8b1t 服务器. 支持由星速云提供</p>
+    </footer>
+
+    <script>
+        // 小游戏代码
+        let score = 0;
+        const button = document.getElementById('click-button');
+        const scoreDisplay = document.getElementById('score');
+
+        button.addEventListener('click', () => {
+            score++;
+            scoreDisplay.textContent = score;
+        });
+    </script>
+</body>
+</html>
